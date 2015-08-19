@@ -1,4 +1,4 @@
-# sqlxlsx version 1.0.2
+# sqlxlsx version 1.0.3
 Create Excel files from SQL queries using [node-oracledb](https://github.com/oracle/node-oracledb) database driver and [exceljs](https://github.com/guyonroche/exceljs) (Streaming XLSX Writer)!
 
 [![NPM](https://nodei.co/npm/sqlxlsx.png?downloads=true&stars=true)](https://nodei.co/npm/sqlxlsx/)

@@ -1,6 +1,6 @@
 {
   "name": "sqlxlsx",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Create Excel files from SQL queries.",
   "main": "index.js",
   "dependencies": {
