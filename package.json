@@ -3,6 +3,10 @@
   "version": "1.0.1",
   "description": "Create Excel files from SQL queries.",
   "main": "index.js",
+  "dependencies": {
+    "exceljs": "^0.2.3",
+    "oracledb": "^1.0.0"
+  },
   "directories": {
     "test": "test"
   },
