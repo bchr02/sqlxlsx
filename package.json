@@ -1,0 +1,27 @@
+{
+  "name": "sqlxlsx",
+  "version": "1.0.0",
+  "description": "Create Excel files from SQL queries.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bchr02/sqlxlsx.git"
+  },
+  "keywords": [
+    "excel",
+    "sql",
+    "xlsx"
+  ],
+  "author": "Bill Christo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bchr02/sqlxlsx/issues"
+  },
+  "homepage": "https://github.com/bchr02/sqlxlsx#readme"
+}
