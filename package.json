@@ -20,6 +20,8 @@
   "keywords": [
     "excel",
     "sql",
+    "oracle",
+    "node-oracledb",
     "xlsx"
   ],
   "author": "Bill Christo",
