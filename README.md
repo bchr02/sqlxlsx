@@ -3,8 +3,14 @@ Create Excel files from SQL queries using [node-oracledb](https://github.com/ora
 
 [![NPM](https://nodei.co/npm/sqlxlsx.png?downloads=true&stars=true)](https://nodei.co/npm/sqlxlsx/)
 
+## About:
+Currently, [sqlxlsx](https://github.com/bchr02/sqlxlsx) only works for Oracle databases but eventually I would like to make it compatible with additional ones such as mysql.
+
+## Prerequisites:
+There are several prerequisites needed to both compile and run the Oracle database driver. Please visit the [node-oracledb INSTALL.md page](https://github.com/oracle/node-oracledb/blob/master/INSTALL.md) for more information.
+
 ## Installation:
-Run `npm install sqlxlsx` to install from the NPM registry.
+- Run `npm install sqlxlsx` to install from the NPM registry.
 
 
 ## Sample Usage:
