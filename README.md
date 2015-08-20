@@ -17,7 +17,7 @@ There are several prerequisites needed to both compile and run the Oracle databa
 ````javascript
 var Sqlxlsx = require('sqlxlsx'),
     sqlxlsx = new Sqlxlsx({
-      sql: 'select somedate from sometable',
+      sql: 'select somedata from sometable',
       oracledb_cfg: {
         user: 'username',
         pass: 'password',
