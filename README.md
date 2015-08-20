@@ -43,9 +43,9 @@ sqlxlsx.update_cfg({
 });
 ````
 
-## Change an Individual Parameter
+## Change Individual Parameter(s)
 ````javascript
-sqlxlsx.update_cfg({exceljs_wsName: 'new name'};
+sqlxlsx.update_cfg({exceljs_wsName: 'new name'});
 ````
 
 ## Create and Define
