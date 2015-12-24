@@ -1,11 +1,11 @@
 {
   "name": "sqlxlsx",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Create Excel files from SQL queries.",
   "main": "index.js",
   "dependencies": {
     "exceljs": "^0.2.3",
-    "oracledb": "^1.0.0"
+    "oracledb": "^1.5.0"
   },
   "directories": {
     "test": "test"

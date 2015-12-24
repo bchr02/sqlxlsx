@@ -30,7 +30,9 @@ Sqlxlsx.prototype = {
 	update_cfg: function(args) {
 		var obj = this;
 		Object.keys(args).forEach(function(key) {
-			obj.config[key] = args[key] || obj.config[key];
+			if(args.hasOwnProperty(key)) {
+				obj.config[key] = args[key];
+			}
 		});
 	},
 	connect: function() {
@@ -80,7 +82,7 @@ Sqlxlsx.prototype = {
 				useStyles: false,
 				useSharedStrings: true
 			};
-		
+
 		cfg.oracledb_conn.execute(
 			cfg.sql,
 			cfg.oracledb_args,
@@ -90,7 +92,7 @@ Sqlxlsx.prototype = {
 					worksheet	= workbook.addWorksheet(cfg.exceljs_wsName),
 					header		= [],
 					row_count	= 0;
-				
+
 				function fetch() {
 					result.resultSet.getRows(cfg.numRows, function(err, rows) {
 						if (err) {
@@ -98,15 +100,15 @@ Sqlxlsx.prototype = {
 							cfg.callback(err);
 							return;
 						}
-						
+
 						row_count += rows.length;
-						
+
 						rows.forEach(function(element) {
 							worksheet.addRow(element).commit();
 						});
-						
+
 						if(doAEF) {cfg.afterEachFetch(row_count);}
-						
+
 						if (rows.length === cfg.numRows) {
 							fetch();
 						} else {
@@ -124,7 +126,7 @@ Sqlxlsx.prototype = {
 						}
 					});
 				}
-				
+
 				if (err) {
 					obj.release();
 					cfg.callback(err.message);
